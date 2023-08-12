@@ -60,10 +60,15 @@ const resetPassword = async (req, res) => {
       emailToSend = resetPasswordEmail;
       await sendEmail(emailToSend);
 
+      const resetData = {
+        generatedPassword,
+        randomToken
+      }
+
       return setSuccessResponse(
         res,
         "Reset Password Email Sent",
-        generatedPassword
+        resetData
       );
     }
   } catch (error) {
