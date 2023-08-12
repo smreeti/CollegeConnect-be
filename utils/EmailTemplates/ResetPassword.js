@@ -61,7 +61,7 @@ module.exports = {
                                 <p>Dear ${username},</p>
                                 <p>You have requested a password reset for your account. To proceed with resetting your password, please click the button below:</p>
                                 <p className = "reset-button">
-                                    <a href="http://localhost:3000/#/updatePassword/${token}">Reset Password</a>
+                                    <a href = "https://collegeconnect.cyclic.app/#/updatePassword/${token}">Reset Password</a>
                                 </p>
                                 <p>If you did not request a password reset, please ignore this email. Your account is still secure.</p>
                                 <p>Thank you,</p>
